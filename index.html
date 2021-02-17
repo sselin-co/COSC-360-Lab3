@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COSC 360 - Lab 3</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <table>
+      <caption>
+        February 2021
+      </caption>
+      <thead>
+        <tr>
+          <th>S</th>
+          <th>M</th>
+          <th>T</th>
+          <th>W</th>
+          <th>T</th>
+          <th>F</th>
+          <th>S</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td id="today">5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td><a href="#">7</a></td>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td><a href="#">14</a></td>
+          <td>15</td>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td><a href="#">21</a></td>
+          <td>22</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td><a href="#">28</a></td>
+          <td colspan="6"></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">
+            <a id="prev" href="#">&#8249;&#8249; January</a>
+          </td>
+          <td></td>
+          <td colspan="3"><a id="next" href="#">March &#8250;&#8250;</a></td>
+        </tr>
+      </tfoot>
+    </table>
+    <form action="http://www.randyconnolly.com/tests/process.php" method="post">
+      <fieldset>
+        <legend>Meeting Details</legend>
+        <label for="client_name">Client Name:</label>
+        <input
+          type="text"
+          id="client"
+          name="client"
+          placeholder="Enter your name"
+        /><br /><br />
+        <label for="first_meeting">First Meeting?</label>
+        <input type="checkbox" id="first" name="first" /><br /><br />
+        <label>Client Type:</label>
+        <input type="radio" id="school" name="type" />
+        <label for="type">School</label>
+        <input type="radio" id="college" name="type" />
+        <label for="type">College</label>
+        <input type="radio" id="university" name="type" />
+        <label for="type">University</label><br /><br />
+        <label for="meeting_date">Meeting Date:</label>
+        <input type="date" id="meeting_date" name="meeting_date" /><br /><br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
